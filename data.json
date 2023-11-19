@@ -1,0 +1,104 @@
+[
+  {
+    "model": "catalog.category",
+    "pk": 1,
+    "fields": {
+      "name": "Лицензии",
+      "description": "Необходимое разрешение для работы такси."
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 2,
+    "fields": {
+      "name": "Автомобили",
+      "description": "Автотранспорт имеющий необходимое разрешение для работы такси."
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 3,
+    "fields": {
+      "name": "Водители",
+      "description": "Водители имеющие необходимое разрешение для работы такси."
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 1,
+    "fields": {
+      "name": "Uber",
+      "description": "Лицензия для работы такси на автомобиле по региону Андалуссия",
+      "photo": "",
+      "category": 1,
+      "price": 90000,
+      "time_create": "2023-11-19T09:14:58.501Z",
+      "time_update": "2023-11-19T09:14:58.501Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 2,
+    "fields": {
+      "name": "Bolt",
+      "description": "Лицензия для работы такси на автомобиле по определённому региону.",
+      "photo": "",
+      "category": 1,
+      "price": 85000,
+      "time_create": "2023-11-19T09:14:58.501Z",
+      "time_update": "2023-11-19T09:14:58.501Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 3,
+    "fields": {
+      "name": "Модели Volkswagen Transporter T6, Минивэн",
+      "description": "Volkswagen Transporter T6 – минивэн M-класса, передний и полный привод. Механика и робот. Дизельные и бензиновые двигатели мощностью от 84 до 204 лошадиных сил.",
+      "photo": "",
+      "category": 2,
+      "price": 48000,
+      "time_create": "2023-11-19T09:14:58.501Z",
+      "time_update": "2023-11-19T09:14:58.501Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 4,
+    "fields": {
+      "name": "Модели Volkswagen Transporter T6, Минивэн Long",
+      "description": "Volkswagen Transporter T6 – минивэн long M-класса, передний и полный привод. Механика и робот. Дизельные и бензиновые двигатели мощностью от 84 до 204 лошадиных сил.",
+      "photo": "",
+      "category": 2,
+      "price": 45000,
+      "time_create": "2023-11-19T09:14:58.501Z",
+      "time_update": "2023-11-19T09:14:58.501Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 5,
+    "fields": {
+      "name": "Juan Ermosa",
+      "description": "Возраст 38 лет. Стаж 12 лет.",
+      "photo": "",
+      "category": 3,
+      "price": 1280,
+      "time_create": "2023-11-19T09:14:58.501Z",
+      "time_update": "2023-11-19T09:14:58.501Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 6,
+    "fields": {
+      "name": "Jose Gonsales",
+      "description": "Возраст 32 года. Стаж 10 лет.",
+      "photo": "",
+      "category": 3,
+      "price": 1300,
+      "time_create": "2023-11-19T09:14:58.501Z",
+      "time_update": "2023-11-19T09:14:58.501Z"
+    }
+  }
+]
