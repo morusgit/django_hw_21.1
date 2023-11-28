@@ -54,3 +54,4 @@ class Command(BaseCommand):
             products_for_create.append(Product(**product_item))
 
         Product.objects.bulk_create(products_for_create)
+

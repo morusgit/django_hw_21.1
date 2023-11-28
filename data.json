@@ -25,80 +25,90 @@
   },
   {
     "model": "catalog.product",
-    "pk": 1,
+    "pk": 7,
     "fields": {
       "name": "Uber",
       "description": "Лицензия для работы такси на автомобиле по региону Андалуссия",
-      "photo": "",
+      "photo": "photos/license1_SYDbRzM.png",
       "category": 1,
       "price": 90000,
-      "time_create": "2023-11-19T09:14:58.501Z",
-      "time_update": "2023-11-19T09:14:58.501Z"
+      "time_create": "2023-11-27T05:42:41.004Z",
+      "time_update": "2023-11-27T05:42:41.004Z"
     }
   },
   {
     "model": "catalog.product",
-    "pk": 2,
+    "pk": 8,
     "fields": {
       "name": "Bolt",
       "description": "Лицензия для работы такси на автомобиле по определённому региону.",
-      "photo": "",
+      "photo": "photos/license2_F00s4up.png",
       "category": 1,
       "price": 85000,
-      "time_create": "2023-11-19T09:14:58.501Z",
-      "time_update": "2023-11-19T09:14:58.501Z"
+      "time_create": "2023-11-27T05:43:29.097Z",
+      "time_update": "2023-11-27T05:43:29.097Z"
     }
   },
   {
     "model": "catalog.product",
-    "pk": 3,
+    "pk": 9,
     "fields": {
       "name": "Модели Volkswagen Transporter T6, Минивэн",
       "description": "Volkswagen Transporter T6 – минивэн M-класса, передний и полный привод. Механика и робот. Дизельные и бензиновые двигатели мощностью от 84 до 204 лошадиных сил.",
-      "photo": "",
+      "photo": "photos/vw1_3G04R2Q.png",
       "category": 2,
       "price": 48000,
-      "time_create": "2023-11-19T09:14:58.501Z",
-      "time_update": "2023-11-19T09:14:58.501Z"
+      "time_create": "2023-11-27T05:44:36.940Z",
+      "time_update": "2023-11-27T05:44:36.940Z"
     }
   },
   {
     "model": "catalog.product",
-    "pk": 4,
+    "pk": 10,
     "fields": {
       "name": "Модели Volkswagen Transporter T6, Минивэн Long",
       "description": "Volkswagen Transporter T6 – минивэн long M-класса, передний и полный привод. Механика и робот. Дизельные и бензиновые двигатели мощностью от 84 до 204 лошадиных сил.",
-      "photo": "",
+      "photo": "photos/vw2_hIGVS9F.png",
       "category": 2,
       "price": 45000,
-      "time_create": "2023-11-19T09:14:58.501Z",
-      "time_update": "2023-11-19T09:14:58.501Z"
+      "time_create": "2023-11-27T05:45:45.012Z",
+      "time_update": "2023-11-27T05:45:45.012Z"
     }
   },
   {
     "model": "catalog.product",
-    "pk": 5,
+    "pk": 11,
     "fields": {
       "name": "Juan Ermosa",
       "description": "Возраст 38 лет. Стаж 12 лет.",
-      "photo": "",
+      "photo": "photos/driver1_3QslsY6.jpg",
       "category": 3,
       "price": 1280,
-      "time_create": "2023-11-19T09:14:58.501Z",
-      "time_update": "2023-11-19T09:14:58.501Z"
+      "time_create": "2023-11-27T05:46:30.681Z",
+      "time_update": "2023-11-27T05:46:30.681Z"
     }
   },
   {
     "model": "catalog.product",
-    "pk": 6,
+    "pk": 12,
     "fields": {
       "name": "Jose Gonsales",
       "description": "Возраст 32 года. Стаж 10 лет.",
-      "photo": "",
+      "photo": "photos/driver2_7qPmFyJ.jpg",
       "category": 3,
-      "price": 1300,
-      "time_create": "2023-11-19T09:14:58.501Z",
-      "time_update": "2023-11-19T09:14:58.501Z"
+      "price": 50000,
+      "time_create": "2023-11-27T05:47:23.187Z",
+      "time_update": "2023-11-27T05:47:23.187Z"
+    }
+  },
+  {
+    "model": "catalog.contact",
+    "pk": 1,
+    "fields": {
+      "name": "UberTaxi",
+      "address": "Malaga, 347855",
+      "phone": "+347777777",
+      "email": "cs777@yandex.ru"
     }
   }
 ]

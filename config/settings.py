@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'djangoProject',  # Название базы данных
+        'NAME': 'django_project',  # Название базы данных
         'USER': 'postgres',  # Пользователь для подключения к базе данных
         'PASSWORD': '0000',  # Пароль для подключения к базе данных
 
@@ -131,5 +131,5 @@ STATICFILES_DIRS = (
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-MEDIA_ROOT =os.path.join(BASE_DIR / 'media')  # Медиа-файлы
+MEDIA_ROOT = os.path.join(BASE_DIR / 'media')  # Медиа-файлы
 MEDIA_URL = '/media/'  # Медиа-файлы
