@@ -3,35 +3,51 @@
 {% load static %}
 
 {% block content %}
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card mb-4 box-shadow">
-            <div class="card-body">
-                {% if item.photo %}
-                    <img src="{% mediapath item.photo %}" alt="{{ item }}"/>
-                {% else %}
-                    <img src="{% static 'img/default.png' %}" alt="{{ object }}"/>
-                {% endif %}
-            </div>
+<div class="col-lg-3 col-md-6 col-sm-12">
+    <div class="card mb-4 box-shadow">
+        <div class="card-body">
+            {% if object.photo %}
+            <img src="{% mediapath object.photo %}" alt="{{ object }}"/>
+            {% else %}
+            <img src="{% static 'img/default.png' %}" alt="{{ object }}"/>
+            {% endif %}
         </div>
     </div>
+</div>
 
-    <div class="col-lg-9 col-md-6 col-sm-12">
-        <div class="card mb-4 box-shadow">
-            <div class="card-body">
-                <small class="d-block text-muted">Категория:
-                    {{ item.category }}
-                </small>
-                <small class="d-block mb-3 text-muted">Производитель:
-                    {{ item.category.description }}
-                </small>
-                <p>
-                    {{ item.description }}
-                </p>
-                <h2 class="card-title pricing-card-title">Цена:
-                    {{ item.price }}
-                </h2>
-                <button type="button" class="w-100 btn btn-lg btn-success my-2">Купить</button>
-            </div>
+<div class="col-lg-9 col-md-6 col-sm-12">
+    <div class="card mb-4 box-shadow">
+        <div class="card-body">
+            <small class="d-block text-muted">Категория:
+                {{ object.category }}
+            </small>
+            <small class="d-block mb-3 text-muted">Производитель:
+                {{ object.category.description }}
+            </small>
+            {% if version %}
+            <small class="d-block mb-3 text-muted">Актуальная версия:
+                {% for v in version %}
+                {{ v.number }}
+                {% if v.title %}
+                &laquo;{{ v.title }}&raquo;
+                {% endif %}
+                {% if not forloop.last %}|{% endif %}
+                {% endfor %}
+            </small>
+            {% endif %}
+            <p>
+                {{ object.description }}
+            </p>
+            <h2 class="card-title pricing-card-title">Цена:
+                {{ object.price }}
+            </h2>
         </div>
     </div>
+    <p>
+        <a href="{% url 'catalog:item_update' object.pk %}"
+           class="m-1 btn btn-sm btn-outline-warning">Редактировать товар</a>
+        <a href="{% url 'catalog:item_delete' object.pk %}"
+           class="m-1 btn btn-sm btn-outline-danger">Удалить товар</a>
+    </p>
+</div>
 {% endblock %}
