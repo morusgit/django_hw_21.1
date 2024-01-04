@@ -1,5 +1,7 @@
 from django.db import models
 
+from config import settings
+
 NULLABLE = {
     'null': True, 'blank': True
 }
@@ -26,6 +28,8 @@ class Product(models.Model):
     time_create = models.DateTimeField(auto_now_add=True, verbose_name='дата создания')
     time_update = models.DateTimeField(auto_now=True, verbose_name='дата обновления')
 
+    owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, **NULLABLE, verbose_name='продавец')
+
     def __str__(self):
         return self.name
 
@@ -37,7 +41,7 @@ class Product(models.Model):
 
 class Version(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE, verbose_name='Продукт')
-    number = models.PositiveIntegerField(verbose_name='Номер версии')
+    number = models.CharField(max_length=8, verbose_name='Номер версии')
     title = models.CharField(max_length=30, **NULLABLE, verbose_name='Название версии')
     is_actual = models.BooleanField(default=False, verbose_name='Признак текущей версии')
 

@@ -1,0 +1,54 @@
+[
+  {
+    "model": "blog.article",
+    "pk": 1,
+    "fields": {
+      "title": "Круговое движение",
+      "slug": "krugovoe-dvizhenie",
+      "content": "Учитесь правилам ПДД всегда",
+      "preview": "blog_images/circle_iFaDsGu.png",
+      "created_on": "2023-12-04T07:43:40.145Z",
+      "is_published": true,
+      "views": 9
+    }
+  },
+  {
+    "model": "blog.article",
+    "pk": 2,
+    "fields": {
+      "title": "Агрегаторы такси",
+      "slug": "agregatoryi-taksi",
+      "content": "Приложения для регистрации такси и поиска заказов!",
+      "preview": "blog_images/Uber_photo.jpg",
+      "created_on": "2023-12-04T07:54:18.773Z",
+      "is_published": true,
+      "views": 5
+    }
+  },
+  {
+    "model": "blog.article",
+    "pk": 5,
+    "fields": {
+      "title": "Такси Bolt",
+      "slug": "taksi-bolt",
+      "content": "Приложение для работы в такси и поиска клиентов.",
+      "preview": "blog_images/Bolt-Taxi_4NR8TEt.png",
+      "created_on": "2023-12-04T10:09:02.473Z",
+      "is_published": true,
+      "views": 3
+    }
+  },
+  {
+    "model": "blog.article",
+    "pk": 8,
+    "fields": {
+      "title": "Такси",
+      "slug": "taksi",
+      "content": "Такси тест",
+      "preview": "blog_images/Bolt-Taxi_EqGlAq4.png",
+      "created_on": "2023-12-25T13:49:28.375Z",
+      "is_published": false,
+      "views": 2
+    }
+  }
+]

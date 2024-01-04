@@ -25,80 +25,126 @@
   },
   {
     "model": "catalog.product",
-    "pk": 7,
+    "pk": 17,
     "fields": {
-      "name": "Uber",
-      "description": "Лицензия для работы такси на автомобиле по региону Андалуссия",
-      "photo": "photos/license1_SYDbRzM.png",
-      "category": 1,
-      "price": 90000,
-      "time_create": "2023-11-27T05:42:41.004Z",
-      "time_update": "2023-11-27T05:42:41.004Z"
+      "name": "Juan Gansales",
+      "description": "Возраст 32 года. Стаж 10 лет.",
+      "photo": "photos/driver1_eml953p.jpg",
+      "price": "120000.00",
+      "category": 3,
+      "time_create": "2023-11-27T13:54:11.574Z",
+      "time_update": "2023-11-27T13:54:11.574Z"
     }
   },
   {
     "model": "catalog.product",
-    "pk": 8,
-    "fields": {
-      "name": "Bolt",
-      "description": "Лицензия для работы такси на автомобиле по определённому региону.",
-      "photo": "photos/license2_F00s4up.png",
-      "category": 1,
-      "price": 85000,
-      "time_create": "2023-11-27T05:43:29.097Z",
-      "time_update": "2023-11-27T05:43:29.097Z"
-    }
-  },
-  {
-    "model": "catalog.product",
-    "pk": 9,
+    "pk": 18,
     "fields": {
       "name": "Модели Volkswagen Transporter T6, Минивэн",
       "description": "Volkswagen Transporter T6 – минивэн M-класса, передний и полный привод. Механика и робот. Дизельные и бензиновые двигатели мощностью от 84 до 204 лошадиных сил.",
-      "photo": "photos/vw1_3G04R2Q.png",
+      "photo": "photos/vw1.png",
+      "price": "45000.00",
       "category": 2,
-      "price": 48000,
-      "time_create": "2023-11-27T05:44:36.940Z",
-      "time_update": "2023-11-27T05:44:36.940Z"
+      "time_create": "2023-11-27T13:57:18.601Z",
+      "time_update": "2023-11-27T13:57:18.601Z"
     }
   },
   {
     "model": "catalog.product",
-    "pk": 10,
+    "pk": 19,
     "fields": {
-      "name": "Модели Volkswagen Transporter T6, Минивэн Long",
-      "description": "Volkswagen Transporter T6 – минивэн long M-класса, передний и полный привод. Механика и робот. Дизельные и бензиновые двигатели мощностью от 84 до 204 лошадиных сил.",
-      "photo": "photos/vw2_hIGVS9F.png",
+      "name": "Bolt",
+      "description": "Лицензия для работы такси на автомобиле по определённому региону.",
+      "photo": "photos/license1.png",
+      "price": "85000.00",
+      "category": 1,
+      "time_create": "2023-11-28T07:18:34.185Z",
+      "time_update": "2023-11-28T07:18:34.185Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 20,
+    "fields": {
+      "name": "Uber",
+      "description": "Лицензия для работы такси на автомобиле по региону Андалуссия",
+      "photo": "photos/license2.png",
+      "price": "90000.00",
+      "category": 1,
+      "time_create": "2023-11-28T07:19:24.167Z",
+      "time_update": "2023-12-24T13:42:23.870Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 21,
+    "fields": {
+      "name": "Jose Mandola Pupper",
+      "description": "57 лет.",
+      "photo": "photos/driver2.jpg",
+      "price": "50000.00",
+      "category": 3,
+      "time_create": "2023-11-28T07:20:24.236Z",
+      "time_update": "2023-12-24T13:52:27.186Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 23,
+    "fields": {
+      "name": "Volkswagen Transporter T6, Минивэн Long",
+      "description": "olkswagen Transporter T6 – минивэн long M-класса, передний и полный привод. Механика и робот. Дизельные и бензиновые двигатели мощностью от 84 до 204 лошадиных сил.",
+      "photo": "photos/vw2_QJzKfUO.png",
+      "price": "40000.00",
       "category": 2,
-      "price": 45000,
-      "time_create": "2023-11-27T05:45:45.012Z",
-      "time_update": "2023-11-27T05:45:45.012Z"
+      "time_create": "2023-11-28T07:23:07.093Z",
+      "time_update": "2023-11-28T07:23:07.093Z"
     }
   },
   {
     "model": "catalog.product",
-    "pk": 11,
+    "pk": 28,
     "fields": {
-      "name": "Juan Ermosa",
-      "description": "Возраст 38 лет. Стаж 12 лет.",
-      "photo": "photos/driver1_3QslsY6.jpg",
-      "category": 3,
-      "price": 1280,
-      "time_create": "2023-11-27T05:46:30.681Z",
-      "time_update": "2023-11-27T05:46:30.681Z"
+      "name": "gg",
+      "description": "gg",
+      "photo": "photos/driver2_VMpmaPO.jpg",
+      "price": "90000.00",
+      "category": 2,
+      "time_create": "2023-12-29T14:04:07.458Z",
+      "time_update": "2023-12-29T14:05:49.756Z"
     }
   },
   {
     "model": "catalog.product",
-    "pk": 12,
+    "pk": 29,
     "fields": {
-      "name": "Jose Gonsales",
-      "description": "Возраст 32 года. Стаж 10 лет.",
-      "photo": "photos/driver2_7qPmFyJ.jpg",
+      "name": "Алексей Костромин",
+      "description": "fff",
+      "photo": "",
+      "price": "10000.00",
       "category": 3,
-      "price": 50000,
-      "time_create": "2023-11-27T05:47:23.187Z",
-      "time_update": "2023-11-27T05:47:23.187Z"
+      "time_create": "2023-12-29T14:44:35.666Z",
+      "time_update": "2023-12-29T14:44:35.708Z"
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 1,
+    "fields": {
+      "product": 20,
+      "number": 1,
+      "title": "ghfhgfgh",
+      "is_actual": false
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 2,
+    "fields": {
+      "product": 21,
+      "number": 3,
+      "title": "ghfhgfgh",
+      "is_actual": true
     }
   },
   {

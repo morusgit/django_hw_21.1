@@ -28,12 +28,11 @@ class ProductAdmin(admin.ModelAdmin):
 # @admin.register(Version)
 # class VersionAdmin(admin.ModelAdmin):
 #     list_display = ('id', 'product', 'number', 'title', 'is_actual')
-#     list_filter = ('product',)
+#     list_filter = ('product')
 #     search_fields = ('number', 'title')
 
 
 @admin.register(Contact)
 class ContactAdmin(admin.ModelAdmin):
     list_display = ('name', 'address')
-    search_fields = ('name', 'address'
-                     )
+    search_fields = ('name', 'address')
