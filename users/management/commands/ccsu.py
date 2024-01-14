@@ -19,7 +19,7 @@ import os
 class Command(BaseCommand):
     def handle(self, *args, **options):
         user = User.objects.create(
-            email='cs777666555@gmail.com',
+            email='admin@admin.ru',
             first_name='admin',
             last_name='admin2',
             is_superuser=True,
