@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-import os.path
+import os
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -21,12 +21,12 @@ load_dotenv(dotenv_path=env_path)
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-SECRET_KEY = 'django-insecure-a$6#m=0sg0t&d=n3z9bq&*2w==fmts5s=t9pcj33-&gc$s9mp0'
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 
-DEBUG = True
+DEBUG = os.getenv('DEBUG') == 'True'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 INSTALLED_APPS = [
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'django.middleware.cache.UpdateCacheMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -50,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.cache.FetchFromCacheMiddleware',
 ]
 
 ROOT_URLCONF = 'config.urls'
@@ -76,9 +78,9 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'django_project',  # Название базы данных
-        'USER': 'postgres',  # Пользователь для подключения к базе данных
-        'PASSWORD': '0000',  # Пароль для подключения к базе данных
+        'NAME': os.getenv('NAME_DB'),  # Название базы данных
+        'USER': os.getenv('USER_DB'),  # Пользователь для подключения к базе данных
+        'PASSWORD': os.getenv('PASSWORD_DB'),  # Пароль для подключения к базе данных
 
     }
 }
@@ -130,6 +132,17 @@ LOGIN_URL = '/users/'
 # mailing settings -- sending letters to console
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# ENABLED_CACHE
+CACHE_ENABLED = os.getenv('CACHE_ENABLED') == 'True'
+
+if CACHE_ENABLED:
+    CACHES = {
+        "default": {
+            "BACKEND": "django.core.cache.backends.redis.RedisCache",
+            "LOCATION": os.getenv('CACHE_LOCATION'),
+         }
+     }
 
 
 

@@ -19,12 +19,12 @@ import os
 class Command(BaseCommand):
     def handle(self, *args, **options):
         user = User.objects.create(
-            email='admin@admin.ru',
+            email= os.getenv('EMAIL_ADMIN'),
             first_name='admin',
             last_name='admin2',
             is_superuser=True,
             is_staff=True,
             is_active=True
         )
-        user.set_password('a3499765')
+        user.set_password(os.getenv('PASSWORD_ADMIN'))
         user.save()
